@@ -5,11 +5,11 @@ def cal_bmi(height,weight):
     bmi = weight / (height * height)
     print("BMI = " + str(round(bmi,2)))
     if bmi < 18.5:
-        print("User is underweight")
+       return -1
     elif bmi <= 25.0:
-        print("User is normal weight")
+       return 0
     elif bmi > 25.0:
-        print("User is overweight") 
+        return 1
     else:
         print("User is out of weight class")
 cal_bmi( weight=80,height= 1.84)
